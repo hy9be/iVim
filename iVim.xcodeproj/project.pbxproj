@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A7422B245F774500602A18 /* catimg_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A74229245F774500602A18 /* catimg_ios.framework */; };
+		A0A7422C245F774500602A18 /* text_cmds_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7422A245F774500602A18 /* text_cmds_ios.framework */; };
+		A0A74232245F796000602A18 /* catimg_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0A74229245F774500602A18 /* catimg_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0A74233245F796000602A18 /* text_cmds_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7422A245F774500602A18 /* text_cmds_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE070C16238F7A6F00854625 /* harfbuzz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE070C11238F7A6E00854625 /* harfbuzz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE070C18238F7A6F00854625 /* freetype.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE070C12238F7A6E00854625 /* freetype.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE070C20238FA6B500854625 /* if_python3.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C7972347276A00F3E794 /* if_python3.c */; };
@@ -118,8 +122,6 @@
 		DE855E56236BF4F600A0EB7E /* profiler.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C4562347275E00F3E794 /* profiler.c */; };
 		DE863ACF20A1589E000FC5F8 /* ExtendedKeyboardConfigNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE863ACE20A1589E000FC5F8 /* ExtendedKeyboardConfigNodes.swift */; };
 		DE863AD120A18297000FC5F8 /* FileLineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE863AD020A18297000FC5F8 /* FileLineReader.swift */; };
-		DE99CEC023C72665000098E9 /* ivish.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE99CEBE23C72664000098E9 /* ivish.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DEA2B9A723D6BD5000E918B8 /* catimg_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEA2B9A523D6BD5000E918B8 /* catimg_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEAF4E8A226EEEDB0037E0F7 /* scenes_keeper.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF4E89226EEEDB0037E0F7 /* scenes_keeper.m */; };
 		DEB2D2DB1F21A421001FDB63 /* VimFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44D41F1F209661007AFD63 /* VimFunctions.swift */; };
 		DEBE7EB723711DD100FC887E /* channel.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C4962347275E00F3E794 /* channel.c */; };
@@ -230,7 +232,6 @@
 		DEC1D08E23478904008DB801 /* session.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C37A2347275C00F3E794 /* session.c */; };
 		DEC1D08F2347891B008DB801 /* pty.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C4A02347275F00F3E794 /* pty.c */; };
 		DEC1D09023478939008DB801 /* xpatience.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C3582347275C00F3E794 /* xpatience.c */; };
-		DEC5D41B2404CE63007B66EE /* text_cmds_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC5D4192404CE62007B66EE /* text_cmds_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DED04866209EA7B900D744EE /* ModifiersArranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED04865209EA7B900D744EE /* ModifiersArranger.swift */; };
 		DEE31E911F4BCDEA000CA9E8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEE31E901F4BCDEA000CA9E8 /* Settings.bundle */; };
 		DEE31E951F4BF712000CA9E8 /* CommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE31E931F4BF711000CA9E8 /* CommandTokenizer.swift */; };
@@ -293,14 +294,14 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DE11B88E23A32A7A0080D00E /* pythonB.framework in Embed Frameworks */,
+				A0A74232245F796000602A18 /* catimg_ios.framework in Embed Frameworks */,
+				A0A74233245F796000602A18 /* text_cmds_ios.framework in Embed Frameworks */,
 				DEBE92E4238CFD09008F2964 /* awk.framework in Embed Frameworks */,
 				DE6F3537237515DF00FCD5AB /* ssh_cmd.framework in Embed Frameworks */,
 				DEEB35F023A3C72400B1B18F /* openssl.framework in Embed Frameworks */,
 				DE11B88A23A32A7A0080D00E /* python3_ios.framework in Embed Frameworks */,
-				DEC5D41B2404CE63007B66EE /* text_cmds_ios.framework in Embed Frameworks */,
 				DE7FD20B239B4B0C00ADFE2F /* ios_system.framework in Embed Frameworks */,
 				DEEB35EE23A3C72400B1B18F /* libssh2.framework in Embed Frameworks */,
-				DEA2B9A723D6BD5000E918B8 /* catimg_ios.framework in Embed Frameworks */,
 				DE2385862372A59D00A37420 /* files.framework in Embed Frameworks */,
 				DEFC96F82388CFAE000F22CE /* text.framework in Embed Frameworks */,
 				DE47B2EE2373E62E003D5BBE /* shell.framework in Embed Frameworks */,
@@ -308,7 +309,6 @@
 				DE070C18238F7A6F00854625 /* freetype.framework in Embed Frameworks */,
 				DE11B88C23A32A7A0080D00E /* pythonA.framework in Embed Frameworks */,
 				DEBE92E7238D0E37008F2964 /* bc_ios.framework in Embed Frameworks */,
-				DE99CEC023C72665000098E9 /* ivish.framework in Embed Frameworks */,
 				DE070C16238F7A6F00854625 /* harfbuzz.framework in Embed Frameworks */,
 				DE6F352E23750D4800FCD5AB /* curl_ios.framework in Embed Frameworks */,
 				DE5382622396074F00E64CE5 /* lua_ios.framework in Embed Frameworks */,
@@ -331,6 +331,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A0A74229245F774500602A18 /* catimg_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = catimg_ios.framework; path = Frameworks/catimg_ios.framework; sourceTree = "<group>"; };
+		A0A7422A245F774500602A18 /* text_cmds_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = text_cmds_ios.framework; path = Frameworks/text_cmds_ios.framework; sourceTree = "<group>"; };
 		DE070C0E238F7A5400854625 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		DE070C10238F7A6E00854625 /* openblas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openblas.framework; path = Frameworks/openblas.framework; sourceTree = "<group>"; };
 		DE070C11238F7A6E00854625 /* harfbuzz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = harfbuzz.framework; path = Frameworks/harfbuzz.framework; sourceTree = "<group>"; };
@@ -501,7 +503,6 @@
 		DE7DF70E238CE54B0012A469 /* lua_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lua_ios.framework; path = Frameworks/lua_ios.framework; sourceTree = "<group>"; };
 		DE863ACE20A1589E000FC5F8 /* ExtendedKeyboardConfigNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedKeyboardConfigNodes.swift; sourceTree = "<group>"; };
 		DE863AD020A18297000FC5F8 /* FileLineReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLineReader.swift; sourceTree = "<group>"; };
-		DE99CEBE23C72664000098E9 /* ivish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ivish.framework; path = ../frameworks/ivish.framework; sourceTree = "<group>"; };
 		DEA0BAF32347273F00F3E794 /* gvim_version.nsh */ = {isa = PBXFileReference; lastKnownFileType = text; path = gvim_version.nsh; sourceTree = "<group>"; };
 		DEA0BAF42347273F00F3E794 /* icons.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = icons.zip; sourceTree = "<group>"; };
 		DEA0BAF62347273F00F3E794 /* danish.nsi */ = {isa = PBXFileReference; lastKnownFileType = text; path = danish.nsi; sourceTree = "<group>"; };
@@ -3715,7 +3716,6 @@
 		DEA0C8172347276C00F3E794 /* keymap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keymap.h; sourceTree = "<group>"; };
 		DEA0C8182347276C00F3E794 /* gui_athena.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gui_athena.c; sourceTree = "<group>"; };
 		DEA2B97523D6AA4900E918B8 /* catimg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = catimg.framework; path = ../frameworks/catimg.framework; sourceTree = "<group>"; };
-		DEA2B9A523D6BD5000E918B8 /* catimg_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = catimg_ios.framework; path = ../frameworks/catimg_ios.framework; sourceTree = "<group>"; };
 		DEAF4E89226EEEDB0037E0F7 /* scenes_keeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scenes_keeper.m; sourceTree = "<group>"; };
 		DEBE45732281604D00E04A08 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DEBE92DF238CFD08008F2964 /* tar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tar.framework; path = Frameworks/tar.framework; sourceTree = "<group>"; };
@@ -3725,7 +3725,6 @@
 		DEC1D02E2347455A008DB801 /* gui_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gui_ios.m; path = vim/src/gui_ios.m; sourceTree = SOURCE_ROOT; };
 		DEC1D03023474F9B008DB801 /* runtime */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = runtime; path = vim/runtime; sourceTree = SOURCE_ROOT; };
 		DEC1D07023477CB8008DB801 /* gui_ios.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = gui_ios.pro; sourceTree = "<group>"; };
-		DEC5D4192404CE62007B66EE /* text_cmds_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = text_cmds_ios.framework; path = ../frameworks/text_cmds_ios.framework; sourceTree = "<group>"; };
 		DED04865209EA7B900D744EE /* ModifiersArranger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiersArranger.swift; sourceTree = "<group>"; };
 		DEE31E901F4BCDEA000CA9E8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		DEE31E931F4BF711000CA9E8 /* CommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTokenizer.swift; sourceTree = "<group>"; };
@@ -3767,9 +3766,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A7422C245F774500602A18 /* text_cmds_ios.framework in Frameworks */,
 				DEEB35ED23A3C72400B1B18F /* libssh2.framework in Frameworks */,
 				DEEB35EF23A3C72400B1B18F /* openssl.framework in Frameworks */,
 				DE7FD20A239B4B0C00ADFE2F /* ios_system.framework in Frameworks */,
+				A0A7422B245F774500602A18 /* catimg_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8500,10 +8501,9 @@
 		DEBE45722281604D00E04A08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEC5D4192404CE62007B66EE /* text_cmds_ios.framework */,
-				DEA2B9A523D6BD5000E918B8 /* catimg_ios.framework */,
+				A0A74229245F774500602A18 /* catimg_ios.framework */,
+				A0A7422A245F774500602A18 /* text_cmds_ios.framework */,
 				DEA2B97523D6AA4900E918B8 /* catimg.framework */,
-				DE99CEBE23C72664000098E9 /* ivish.framework */,
 				DE0B1DD72396577A0066E132 /* pythonB.framework */,
 				DE16465F2390DB7200ADC198 /* pythonA.framework */,
 				DE070C12238F7A6E00854625 /* freetype.framework */,
@@ -8668,7 +8668,7 @@
 				TargetAttributes = {
 					DE531AF11F20941100D71DB3 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = LGM6M9XA5D;
+						DevelopmentTeam = 35DPN3BL4S;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -8685,21 +8685,21 @@
 					};
 					DE531B051F20941200D71DB3 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = LGM6M9XA5D;
+						DevelopmentTeam = 35DPN3BL4S;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DE531AF11F20941100D71DB3;
 					};
 					DE531B101F20941200D71DB3 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = LGM6M9XA5D;
+						DevelopmentTeam = 35DPN3BL4S;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DE531AF11F20941100D71DB3;
 					};
 					DEEAD1791F23005500B4CAC9 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = LGM6M9XA5D;
+						DevelopmentTeam = 35DPN3BL4S;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -9188,7 +9188,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = iVim/iVim.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -9210,11 +9210,12 @@
 					"$(PROJECT_DIR)/vim/src/xpm/x64/lib",
 					"$(PROJECT_DIR)/vim/src/xpm/x86/lib",
 				);
-				MARKETING_VERSION = 2.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.ivim;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locussocial.tools.iosvim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/iVim-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -9227,7 +9228,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = iVim/iVim.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -9249,11 +9250,12 @@
 					"$(PROJECT_DIR)/vim/src/xpm/x64/lib",
 					"$(PROJECT_DIR)/vim/src/xpm/x86/lib",
 				);
-				MARKETING_VERSION = 2.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.ivim;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locussocial.tools.iosvim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/iVim-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -9262,7 +9264,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				INFOPLIST_FILE = iVimTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.iVimTests;
@@ -9277,7 +9279,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				INFOPLIST_FILE = iVimTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.iVimTests;
@@ -9291,7 +9293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				INFOPLIST_FILE = iVimUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.iVimUITests;
@@ -9305,7 +9307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				INFOPLIST_FILE = iVimUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.iVimUITests;
@@ -9320,15 +9322,16 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = iVimShare/iVimShare.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				INFOPLIST_FILE = iVimShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 2.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.ivim.share;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locussocial.tools.iosvim.share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -9337,15 +9340,16 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = iVimShare/iVimShare.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LGM6M9XA5D;
+				DEVELOPMENT_TEAM = 35DPN3BL4S;
 				INFOPLIST_FILE = iVimShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 2.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.terrychou.ivim.share;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locussocial.tools.iosvim.share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
