@@ -76,16 +76,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     @objc func VimStarter() {
         guard self.customizeEnv() else { return }
+        
         var args = ["vim"]
         if !scenes_keeper_restore_prepare() {
             gSVO.showError("failed to auto-restore")
         } else if let spath = scene_keeper_valid_session_file_path() {
+            
             let rCmd = "silent! source \(spath) | " +
             "silent! idocuments session"
+            
+            // Execute <rCmd> after to
+            // 1. source the session file
+            // 2. load the last open session
             args += ["-c", rCmd]
         }
+        
+        // Load other arguments from UserDefaults db
         args += LaunchArgumentsParser().parse()
         var argv = args.map { strdup($0) }
+        
+        // Launch vim
         VimMain(Int32(args.count), &argv)
         argv.forEach { free($0) }
     }

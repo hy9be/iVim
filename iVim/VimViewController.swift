@@ -108,14 +108,18 @@ final class VimViewController: UIViewController, UIKeyInput, UITextInput, UIText
     override func viewDidLoad() {
         guard gVVC == nil else { return }
         gVVC = self
+        
+        // create the UIView for Vim and add to here
         let v = VimView(frame: .zero)
         (self.view as! VimMainView).addShellView(v)
         self.vimView = v
+        
         gui_ios_init_bg_color()
         
         self.textTokenizer = UITextInputStringTokenizer(textInput: self)
         self.registerNotifications()
         
+        // add gesture recognizer for click, longPress, scroll and pan
         v.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.click(_:))))
         v.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(_:))))
         let twoFingersLongPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(_:)))
@@ -135,6 +139,7 @@ final class VimViewController: UIViewController, UIKeyInput, UITextInput, UIText
         self.inputAssistantItem.leadingBarButtonGroups = []
         self.inputAssistantItem.trailingBarButtonGroups = []
         
+        // add the extended keyboard
         gEKM.registerController(self)
     }
     
@@ -150,6 +155,8 @@ final class VimViewController: UIViewController, UIKeyInput, UITextInput, UIText
             self.becomeFirstResponder()
             self.reloadInputViews()
         }
+        
+        // send mouse event to vim
         gui_send_mouse_event(mouseEvent,
                              Int32(point.x),
                              Int32(point.y),
